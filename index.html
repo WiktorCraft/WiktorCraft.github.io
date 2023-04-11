@@ -6,29 +6,40 @@
 <p>web development is not my strong side. 
     If you want to help me in creating the site or want to know more, write to the email: WiktorCraft2137@hotmail.com Thank you!
     p.s. this page is created by html programming language</p>
-    <form action="login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Login">
+    <div class="login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
         <p>Login module beta. p.s. i used chat gpt for this not working yet</p>
         <p>Or register if you dont have an account also not working yet:</p>
-        <form action="register.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            
-            <input type="submit" value="Register">
-          </form>
-    </form>
+        <div class="register">
+            <h2>Register</h2>
+            <form action="register.php" method="post">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn">Register</button>
+            </form>
+          </div>
       
 </body>
 </html>
