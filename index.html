@@ -1,114 +1,128 @@
-<?php
-echo '<p><html><head>';
-echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">';
-echo '<link rel="stylesheet" href="./style.css">';
-echo '<link rel="shortcut icon" href="assets/images/new_birdflop_logo_large.png" type="image/x-icon">';
-echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script></p>';
-echo '<style type="text/css" id="operaUserStyle"></style>';
-echo '<p>  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><br />';
-echo '<script type="text/javascript" src="/assets/js/js.cookie.js"></script><br />';
-echo '<title>RGB Gradient Creator</title><br />';
-echo '</head><head>';
-echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">';
-echo '<link rel="stylesheet" href="./style.css">';
-echo '<link rel="shortcut icon" href="assets/images/new_birdflop_logo_large.png" type="image/x-icon">';
-echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script></p>';
-echo '<style type="text/css" id="operaUserStyle"></style>';
-echo '<p>    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><br />';
-echo '<script type="text/javascript" src="/assets/js/js.cookie.js"></script><br />';
-echo '<title>RGB Gradient Creator</title><br />';
-echo '</head></p>';
-echo '<p>  <body id="bg" class="container dark" style="font-family: Quicksand;"></p>';
-echo '<div id="hexColorTemplate" style="display:none;">';
-echo '<div class="row">';
-echo '<label for="color-$NUM">Hex Color #$NUM</label><br />';
-echo '<input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-$NUM" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="$VAL" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${$NUM}`, document.getElementById('color-$NUM').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FFFFFF">';
-echo '</div>';
-echo '</p></div>';
-echo '<div id="content">';
-echo '<h1 id="title">RGBirdflop</h1>';
-echo '<p id="graylabel1" class="darkgray" style="padding-bottom: 10px;">Use Google Chrome for the best experience.</p>';
-echo '<div class="container-fluid">';
-echo '<div class="row">';
-echo '<div class="col-md-2" style="padding-left: 0;">';
-echo '<div id="hexColors" class="container-fluid">';
-echo '<!-- Will be populated in JavaScript --></p>';
-echo '<div class="row">';
-echo '<label for="color-1">Hex Color #1</label><br />';
-echo '<input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-1" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(251, 242, 29) 0%, rgb(251, 242, 29) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="084CFB" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${1}`, document.getElementById('color-1').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FBF21D">';
-echo '</div>';
-echo '<div class="row">';
-echo '<label for="color-2">Hex Color #2</label><br />';
-echo '<input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-2" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(253, 0, 0) 0%, rgb(253, 0, 0) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="ADF3FD" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${2}`, document.getElementById('color-2').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FD0000">';
-echo '</div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '<div class="col-md-10" style="padding-right: 0;">';
-echo '<div class="container-fluid">';
-echo '<div class="row">';
-echo '<div id="output">';
-echo '<label id="label4" for="outputText">Output</label><br />';
-echo '<label id="graylabel2" class="darkgray" for="outputText" style="font-weight: normal;">Copy-paste this for RGB text!</label></p>';
-echo '<pre id="outputText" style="border-radius: 10px; white-space: pre-wrap; height: 95px; margin-right: 15px; font-family: MinecraftRegular; margin-bottom: 10px;" onclick="copyTextToClipboard(this.textContent);" class="darktextboxes">&amp;#fbf21dT&amp;#fbdf1by&amp;#fbcd19p&amp;#fbba16e &amp;#fca814s&amp;#fc9512o&amp;#fc8210m&amp;#fc700de&amp;#fc5d0bt&amp;#fc4a09h&amp;#fd3807i&amp;#fd2504n&amp;#fd1302g&amp;#fd0000!</pre>';
-echo '<p id="error" style="display: none;">This is more than 256 characters and may not fit in the chat box.</p>';
-echo '</p></div>';
-echo '</p></div>';
-echo '<div class="row">';
-echo '<div id="coloredNick" class="minecraft"><span style="color: rgb(251, 242, 29);">T</span><span style="color: rgb(251, 223, 27);">y</span><span style="color: rgb(251, 205, 25);">p</span><span style="color: rgb(251, 186, 22);">e</span><span> </span><span style="color: rgb(252, 168, 20);">s</span><span style="color: rgb(252, 149, 18);">o</span><span style="color: rgb(252, 130, 16);">m</span><span style="color: rgb(252, 112, 13);">e</span><span style="color: rgb(252, 93, 11);">t</span><span style="color: rgb(252, 74, 9);">h</span><span style="color: rgb(253, 56, 7);">i</span><span style="color: rgb(253, 37, 4);">n</span><span style="color: rgb(253, 19, 2);">g</span><span style="color: rgb(253, 0, 0);">!</span></div>';
-echo '</p></div>';
-echo '<div class="row">';
-echo '<div class="col-md-3" style="padding-left: 0;">';
-echo '<label for="nickname">Message</label><br />';
-echo '<input class="form-control darktextboxes" id="nickname" type="text" maxlength="100" placeholder="Your Text" value="birdflop.com" oninput="javascript: updateOutputText(event);" onchange="javascript: updateOutputText(event)">';
-echo '</div>';
-echo '</p></div>';
-echo '<div class="row">';
-echo '<div class="col-md-3" style="padding-left: 0;">';
-echo '<label for="output-format">Output Format</label><br />';
-echo '<select id="output-format" class="form-control dark" onchange="updateOutputText(event);"><option value="0">Default (&amp;#rrggbb)</option><option value="2">Legacy (&amp;x&amp;r&amp;r&amp;g&amp;g&amp;b&amp;b)</option><option value="6">Console (§x§r§r§g§g§b§b)</option><option value="8">MOTD (\u00A7x)</option><option value="1">Chat (&lt;#rrggbb&gt;)</option><option value="7">BBCode [COLOR=#rrggbb]</option></select>';
-echo '</div>';
-echo '</p></div>';
-echo '<div class="row">';
-echo '<div class="col-md-3" style="padding-left: 0;">';
-echo '<label for="color-preset">Color Preset</label><br />';
-echo '<select id="color-preset" class="form-control dark" onchange="preset(this.value); updateOutputText(event); "><option value="0">None</option><option value="1">Rainbow</option></select>';
-echo '</div>';
-echo '</p></div>';
-echo '<div class="row">';
-echo '<label for="numOfColors">Number of Colors</label><br />';
-echo '<input class="form-control dark darktextboxes" style="width: 75px;" value="2" id="numOfColors" type="number" min="2" max="10" onchange="updateOutputText(event); toggleColors(this.value);" oninput="updateOutputText(event); toggleColors(this.value);">';
-echo '</div>';
-echo '<div class="row">';
-echo '<div id="dbold">';
-echo '<input type="checkbox" id="bold" onclick="updateOutputText(event);"><br />';
-echo '<label for="bold">Bold</label>';
-echo '</div>';
-echo '<div id="ditalics">';
-echo '<input type="checkbox" id="italics" onclick="updateOutputText(event);"><br />';
-echo '<label for="italics">Italic</label>';
-echo '</div>';
-echo '<div id="dunderline">';
-echo '<input type="checkbox" id="underline" onclick="updateOutputText(event);"><br />';
-echo '<label for="underline">Underline</label>';
-echo '</div>';
-echo '<div id="dstrike">';
-echo '<input type="checkbox" id="strike" onclick="updateOutputText(event);"><br />';
-echo '<label for="strike">Strikethrough</label>';
-echo '</div>';
-echo '<div id="appearance">';
-echo '<input type="checkbox" id="darkmode" onclick="darkMode();"><br />';
-echo '<label for="darkmode" style="margin-bottom: 0px;margin-top: 0px;"> Dark Mode</label>';
-echo '</div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '</p></div>';
-echo '<p>    <script src="jscolor.js"></script><br />';
-echo '<script src="script.js"></script></p>';
-echo '<footer>';
-echo '<p>A special thanks to <a href="https://github.com/Oli-idk">Oli</a> and <a href="https://github.com/saboooor">Saboor</a> for their work on this RGB gradient generator. Happy to have y'all helping me out.</p>';
-echo '</footer>';
-echo '<p></body></html></p>';
-?>
+<html><head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="assets/images/new_birdflop_logo_large.png" type="image/x-icon">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/js.cookie.js"></script>
+  <title>RGB Gradient Creator</title>
+</head><head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="assets/images/new_birdflop_logo_large.png" type="image/x-icon">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/js.cookie.js"></script>
+    <title>RGB Gradient Creator</title>
+  </head>
+
+  <body id="bg" class="container dark" style="font-family: Quicksand;">
+  
+    <div id="hexColorTemplate" style="display:none;">
+      <div class="row">
+        <label for="color-$NUM">Hex Color #$NUM</label>
+        <input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-$NUM" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="$VAL" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${$NUM}`, document.getElementById('color-$NUM').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FFFFFF">
+      </div>
+    </div>
+    
+    <div id="content">
+      <h1 id="title">RGBirdflop</h1>
+      <p id="graylabel1" class="darkgray" style="padding-bottom: 10px;">Use Google Chrome for the best experience.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2" style="padding-left: 0;">
+            <div id="hexColors" class="container-fluid">
+              <!-- Will be populated in JavaScript -->
+            
+      <div class="row">
+        <label for="color-1">Hex Color #1</label>
+        <input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-1" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(251, 242, 29) 0%, rgb(251, 242, 29) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="084CFB" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${1}`, document.getElementById('color-1').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FBF21D">
+      </div>
+    
+      <div class="row">
+        <label for="color-2">Hex Color #2</label>
+        <input class="form-control col-md-1 hexColor jscolor darktextboxes" id="color-2" style="border-radius: 10px; background-image: linear-gradient(to right, rgb(253, 0, 0) 0%, rgb(253, 0, 0) 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) 100%), url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAFNJREFUSEtjnDlz5n8GPODs2bP4pBmMjY3xyuPSn5KSwrBt27bljKMOGA2B0RAY8BBIS0vDWw6Qm89hhQMu/U5OTgxLly5dzjjqgNEQGA2BgQ4BAPJuqnG97DVRAAAAAElFTkSuQmCC&quot;) !important; background-position: left top, left top !important; background-size: auto, 32px 16px !important; background-repeat: repeat-y, repeat-y !important; background-origin: padding-box, padding-box !important; padding-left: 40px !important;" value="ADF3FD" data-jscolor="{preset:'small dark', position:'right'}" oninput="javascript: updateOutputText(event)" onchange="javascript: updateOutputText(event); Cookies.set(`#${2}`, document.getElementById('color-2').value, { expires: 7, path: '' })" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-current-color="#FD0000">
+      </div>
+    </div>
+          </div>
+          <div class="col-md-10" style="padding-right: 0;">
+            <div class="container-fluid">
+              <div class="row">
+                <div id="output">
+                  <label id="label4" for="outputText">Output</label>
+                  <label id="graylabel2" class="darkgray" for="outputText" style="font-weight: normal;">Copy-paste this for RGB text!</label>
+                  <pre id="outputText" style="border-radius: 10px; white-space: pre-wrap; height: 95px; margin-right: 15px; font-family: MinecraftRegular; margin-bottom: 10px;" onclick="copyTextToClipboard(this.textContent);" class="darktextboxes">&amp;#fbf21dT&amp;#fbdf1by&amp;#fbcd19p&amp;#fbba16e &amp;#fca814s&amp;#fc9512o&amp;#fc8210m&amp;#fc700de&amp;#fc5d0bt&amp;#fc4a09h&amp;#fd3807i&amp;#fd2504n&amp;#fd1302g&amp;#fd0000!</pre>
+                  <p id="error" style="display: none;">This is more than 256 characters and may not fit in the chat box.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div id="coloredNick" class="minecraft"><span style="color: rgb(251, 242, 29);">T</span><span style="color: rgb(251, 223, 27);">y</span><span style="color: rgb(251, 205, 25);">p</span><span style="color: rgb(251, 186, 22);">e</span><span> </span><span style="color: rgb(252, 168, 20);">s</span><span style="color: rgb(252, 149, 18);">o</span><span style="color: rgb(252, 130, 16);">m</span><span style="color: rgb(252, 112, 13);">e</span><span style="color: rgb(252, 93, 11);">t</span><span style="color: rgb(252, 74, 9);">h</span><span style="color: rgb(253, 56, 7);">i</span><span style="color: rgb(253, 37, 4);">n</span><span style="color: rgb(253, 19, 2);">g</span><span style="color: rgb(253, 0, 0);">!</span></div>
+              </div>
+              <div class="row">
+                <div class="col-md-3" style="padding-left: 0;">
+                  <label for="nickname">Message</label>
+                  <input class="form-control darktextboxes" id="nickname" type="text" maxlength="100" placeholder="Your Text" value="birdflop.com" oninput="javascript: updateOutputText(event);" onchange="javascript: updateOutputText(event)">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3" style="padding-left: 0;">
+                  <label for="output-format">Output Format</label>
+                  <select id="output-format" class="form-control dark" onchange="updateOutputText(event);">
+                    <option value="0">Default (&amp;#rrggbb)</option>
+                    <option value="2">Legacy (&amp;x&amp;r&amp;r&amp;g&amp;g&amp;b&amp;b)</option>
+                    <option value="6">Console (§x§r§r§g§g§b§b)</option>
+                    <option value="8">MOTD (\u00A7x)</option>
+                    <option value="1">Chat (&lt;#rrggbb&gt;)</option>
+                    <option value="7">BBCode [COLOR=#rrggbb]</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3" style="padding-left: 0;">
+                  <label for="color-preset">Color Preset</label>
+                  <select id="color-preset" class="form-control dark" onchange="preset(this.value); updateOutputText(event); ">
+                    <option value="0">None</option>
+                    <option value="1">Rainbow</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <label for="numOfColors">Number of Colors</label>
+                <input class="form-control dark darktextboxes" style="width: 75px;" value="2" id="numOfColors" type="number" min="2" max="10" onchange="updateOutputText(event); toggleColors(this.value);" oninput="updateOutputText(event); toggleColors(this.value);">
+              </div>
+              <div class="row">
+                <div id="dbold">
+                  <input type="checkbox" id="bold" onclick="updateOutputText(event);">
+                  <label for="bold">Bold</label>
+                </div>
+                <div id="ditalics">
+                  <input type="checkbox" id="italics" onclick="updateOutputText(event);">
+                  <label for="italics">Italic</label>
+                </div>
+                <div id="dunderline">
+                  <input type="checkbox" id="underline" onclick="updateOutputText(event);">
+                  <label for="underline">Underline</label>
+                </div>
+                <div id="dstrike">
+                  <input type="checkbox" id="strike" onclick="updateOutputText(event);">
+                  <label for="strike">Strikethrough</label>
+                </div>
+                <div id="appearance">
+                  <input type="checkbox" id="darkmode" onclick="darkMode();">
+                  <label for="darkmode" style="margin-bottom: 0px;margin-top: 0px;"> Dark Mode</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jscolor.js"></script>
+    <script src="script.js"></script>
+    
+
+  <footer>
+    <p>A special thanks to <a href="https://github.com/Oli-idk">Oli</a> and <a href="https://github.com/saboooor">Saboor</a> for their work on this RGB gradient generator. Happy to have y'all helping me out.</p>
+  </footer>
+
+</body></html>
