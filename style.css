@@ -1,0 +1,16 @@
+#przycisk {
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    /* Tutaj ustaw kolor czcionki przycisku (color) na biały*/
+    
+    background: rgb(40,196,243);
+    background: radial-gradient(circle, rgba(40,196,243,1) 0%, rgba(3,59,191,1) 100%);
+    border-radius:100%;
+    box-shadow: 0px 10px 0px 0px grey;
+    z-index:10;
+    position:relative;
+    top: -150px;
+    font-family: 'Bungee', sans-serif;
+    font-weight: bold;
+}
